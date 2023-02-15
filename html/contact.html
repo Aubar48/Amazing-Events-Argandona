@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./assets/img/Logo-Amazing-Events.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Amazing Events</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <div class="container-fluid px-0 d-flex flex-column">
+        <header class="d-flex px-5 pt-4">
+            <div class="d-flex flex-md-row flex-column w-100 pb-3">
+                <img class="me-auto" src="../img/Logo_Amazing_Events.png" alt="logo" height="40">
+                <nav class="nav nav-pills ">
+                    <a class="nav-link text-dark" href="../index.html">Home</a>
+                    <a class="nav-link text-dark" href="./upcomingEvents.html">Upcoming Events</a>
+                    <a class="nav-link text-dark" href="./pastEvents.html">Past Events</a>
+                    <a class="nav-link active" href="./contact.html">Contact</a>
+                    <a class="nav-link text-dark" href="./stats.html">Stats</a>
+                </nav>
+            </div>
+        </header>
+        <main class="d-flex flex-column pb-5 vh-100">
+            <section class="d-flex bg-dark-subtle justify-content-between align-items-center px-3">
+                <i class="bi bi-caret-left fs-1"></i>
+                <h1 class="d-inline-flex align-items-center">Contact</h1>
+                <i class="bi bi-caret-right fs-1"></i>
+            </section>
+            <form class="d-flex w-100 form justify-content-center align-items-center">
+                <div class="d-flex col-11 col-sm-8 col-lg-5 flex-column mt-5 p-4 rounded-3">
+                    <div class="mb-3">
+                        <label for="name" class="form-label fs-4">Name:</label>
+                        <input type="text" class="form-control " id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="form-label fs-4">Email address:</label>
+                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <textarea class="form-control" placeholder="Mensagge" id="mensagge"></Textarea>
+                        <label for="mensagge" class="fs-6">Mensagge</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-pink col-4 mx-auto">Submit</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <footer class="d-flex bg-dark text-white align-items-center justify-content-between px-4">
+        <div class="d-inline-flex col-lg-2 col-sm-3 col-4 fs-2 justify-content-around">
+            <i class="bi bi-instagram btn btn-danger fs-4 px-2 py-0"></i>
+            <i class="bi bi-facebook btn btn-primary fs-4 px-2 py-0"></i>
+            <i class="bi bi-whatsapp btn btn-success fs-4 px-2 py-0"></i>
+        </div>
+
+        <div class="me-5 fs-3">
+            <span>FE01-TM</span>
+        </div>
+    </footer>
+</body>
+
+</html>

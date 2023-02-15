@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Events</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+
+    <div class="container-fluid px-0 d-flex flex-column">
+        <header class="d-flex px-5 pt-4">
+            <div class="d-flex w-100 pb-3">
+
+                <img class="me-auto" src="../img/Logo_Amazing_Events.png" alt="logo" height="40">
+
+                <nav class="nav nav-pills">
+                    <a class="nav-link text-dark" href="../index.html">Home</a>
+                    <a class="nav-link active" href="./upcomingEvents.html">Upcoming Events</a>
+                    <a class="nav-link text-dark" href="./pastEvents.html">Past Events</a>
+                    <a class="nav-link text-dark" href="./contact.html">Contact</a>
+                    <a class="nav-link text-dark" href="./stats.html">Stats</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="d-flex flex-column vh-100 pb-2">
+            <section class="d-flex bg-dark-subtle justify-content-between align-items-center px-3">
+                <i class="bi bi-caret-left fs-1"></i>
+                <h1 class="d-inline-flex align-items-center">Upcoming Events</h1>
+                <i class="bi bi-caret-right fs-1"></i>
+            </section>
+            <section
+                class="search-area d-inline-flex justify-content-around mt-3 align-items-center pb-4 border-bottom">
+                <div class="d-flex justify-content-around col-4">
+                    <div>
+                        <input class="form-check-input" type="checkbox" name="category1" id="category1">
+                        <label for="cateogry1">Category1</label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name="category2" id="category2">
+                        <label for="cateogry2">Category2</label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name="category3" id="category3">
+                        <label for="cateogry3">Category3</label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name="category4" id="category4">
+                        <label for="cateogry4">Category4</label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name="category5" id="category5">
+                        <label for="cateogry5">Category5</label>
+                    </div>
+
+                </div>
+                <div class="d-inline-flex col-4">
+                    <input type="text" class="form-control border border-secondary">
+                    <button class="ms-2 btn btn-pink text-white" type="button" name="buscar"><i
+                            class="bi bi-search"></i></button>
+                </div>
+            </section>
+
+            <div class="row row-cols-4 row-cols-md-4 row-cols-lg-4 g-4 m-4 text-center">
+                <div class="col">
+                    <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="../img/Marathon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-inline-flex justify-content-around">
+                            <div class="d-flex align-items-center">
+                                <span>Price: 20p</span>
+                            </div>
+                            <button class="btn btn-pink text-white" type="button">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="../img/Food_Fair.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                        <div class="card-footer d-inline-flex justify-content-around">
+                            <div class="d-flex align-items-center">
+                                <span>Price: 20p</span>
+                            </div>
+                            <button class="btn btn-pink text-white" type="button">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="../img/Cinema.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                        <div class="card-footer d-inline-flex justify-content-around">
+                            <div class="d-flex align-items-center">
+                                <span>Price: 20p</span>
+                            </div>
+                            <button class="btn btn-pink text-white" type="button">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="../img/Costume_Party.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                        <div class="card-footer d-inline-flex justify-content-around">
+                            <div class="d-flex align-items-center">
+                                <span>Price: 20p</span>
+                            </div>
+                            <button class="btn btn-pink text-white" type="button">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="d-flex bg-dark text-white align-items-center justify-content-between">
+            <div class="d-inline-flex col-2 fs-2 justify-content-around">
+                <i class="bi bi-instagram btn btn-danger fs-4 px-2 py-0"></i>
+
+                <i class="bi bi-facebook btn btn-primary fs-4 px-2 py-0"></i>
+
+                <i class="bi bi-whatsapp btn btn-success fs-4 px-2 py-0"></i>
+            </div>
+            <div class="me-5 fs-3">
+                <span>FE01-TM</span>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>
