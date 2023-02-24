@@ -455,9 +455,9 @@ function crearTarjetas(arrayData) {
     for (const event of arrayData.events) {
         if(event.date > currentDate){
             tarjetas += `
-        <div class="col">
+        <div class="col-xs col-sm col-md col-lg">
         <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary nrouded">
-            <img src=" ${event.image} " class="card-img-top" alt="card" width:"500px">
+            <img src=" ${event.image} " class="card-img-top" alt="card">
             <div class="card-body">
                 <h5 class="card-title"> ${event.name} </h5>
                 <p class="card-text"> ${event.description} </p>
@@ -467,7 +467,7 @@ function crearTarjetas(arrayData) {
                 <div class="d-flex align-items-center">
                     <h5>Price: ${event.price} $ </h5>            
                 </div>
-                <a class="btn btn-pink text-white" href="./html/details.html" >More Info</a>
+                <a class="btn btn-pink text-white" href="../html/details.html" >More Info</a>
             </div>
         </div>
     </div>`

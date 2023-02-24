@@ -467,7 +467,7 @@ function crearTarjetas(arrayData) {
                 <div class="d-flex align-items-center">
                     <h5>Price: ${event.price} $ </h5>            
                 </div>
-                <a class="btn btn-pink text-white" href="./html/details.html" >More Info</a>
+                <a class="btn btn-pink text-white" href="../html/details.html" >More Info</a>
             </div>
         </div>
     </div>`
