@@ -35,34 +35,33 @@
             </div>
         </header>
 
-        <main class="d-flex flex-column vh-100 pb-2">
+        <main class="d-flex flex-column pb-2">
             <section class="d-flex bg-dark-subtle justify-content-between align-items-center px-3">
                 <i class="bi bi-caret-left fs-1"></i>
-                <h1 class="d-inline-flex align-items-center">Upcoming Events</h1>
+                <h1 class="d-inline-flex align-items-center">Upcoming Events 2022-09-01</h1>
                 <i class="bi bi-caret-right fs-1"></i>
             </section>
-            <section
-                class="search-area d-inline-flex justify-content-around mt-3 align-items-center pb-4 border-bottom">
+            <div class="search-area d-inline-flex justify-content-around mt-3 align-items-center pb-4 border-bottom">
                 <div class="d-flex justify-content-around col-4">
                     <div>
                         <input class="form-check-input" type="checkbox" name="category1" id="category1">
-                        <label for="cateogry1">Category1</label>
+                        <label for="category1">Category1</label>
                     </div>
                     <div>
                         <input class="form-check-input" type="checkbox" name="category2" id="category2">
-                        <label for="cateogry2">Category2</label>
+                        <label for="category2">Category2</label>
                     </div>
                     <div>
                         <input class="form-check-input" type="checkbox" name="category3" id="category3">
-                        <label for="cateogry3">Category3</label>
+                        <label for="category3">Category3</label>
                     </div>
                     <div>
                         <input class="form-check-input" type="checkbox" name="category4" id="category4">
-                        <label for="cateogry4">Category4</label>
+                        <label for="category4">Category4</label>
                     </div>
                     <div>
                         <input class="form-check-input" type="checkbox" name="category5" id="category5">
-                        <label for="cateogry5">Category5</label>
+                        <label for="category5">Category5</label>
                     </div>
 
                 </div>
@@ -71,75 +70,10 @@
                     <button class="ms-2 btn btn-pink text-white" type="button" name="buscar"><i
                             class="bi bi-search"></i></button>
                 </div>
-            </section>
+            </div>
 
-            <div class="row row-cols-4 row-cols-md-4 row-cols-lg-4 g-4 m-4 text-center">
-                <div class="col">
-                    <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="../img/Marathon.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer d-inline-flex justify-content-around">
-                            <div class="d-flex align-items-center">
-                                <span>Price: 20p</span>
-                            </div>
-                            <button class="btn btn-pink text-white" type="button">Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="../img/Food_Fair.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                        <div class="card-footer d-inline-flex justify-content-around">
-                            <div class="d-flex align-items-center">
-                                <span>Price: 20p</span>
-                            </div>
-                            <button class="btn btn-pink text-white" type="button">Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="../img/Cinema.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
-                        </div>
-                        <div class="card-footer d-inline-flex justify-content-around">
-                            <div class="d-flex align-items-center">
-                                <span>Price: 20p</span>
-                            </div>
-                            <button class="btn btn-pink text-white" type="button">Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="../img/Costume_Party.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
-                        </div>
-                        <div class="card-footer d-inline-flex justify-content-around">
-                            <div class="d-flex align-items-center">
-                                <span>Price: 20p</span>
-                            </div>
-                            <button class="btn btn-pink text-white" type="button">Details</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="row row-cols-4 row-cols-md-4 row-cols-lg-4 g-4 m-4 text-center" id="contenedor">
+                
             </div>
         </main>
 
@@ -155,9 +89,8 @@
                 <span>FE01-TM</span>
             </div>
         </footer>
-
-
     </div>
+    <script src="../js/upcomingEvent.js"></script>
 </body>
 
 </html>
