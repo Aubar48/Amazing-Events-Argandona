@@ -450,6 +450,7 @@ let Events =
     }
 const currentDate = Events.currentDate
 const contenedorTarjetas = document.getElementById('contenedor')
+const checkboxes = document.querySelectorAll('input[name="categoria"]');
 function crearTarjetas(arrayData) {
     let tarjetas = ''
     for (const event of arrayData.events) {
@@ -479,3 +480,55 @@ function crearTarjetas(arrayData) {
 }
 console.log(crearTarjetas(Events))
 contenedorTarjetas.innerHTML = crearTarjetas(Events)
+
+
+function filtrarPorCategoria(eventos, categorias) {
+    if (categorias.length === 0) {
+        return eventos;
+    } else {
+        const eventosFiltrados = eventos.filter((evento) => categorias.includes(evento.category));
+        return eventosFiltrados;
+    }
+}
+
+function actualizarTarjetas() {
+    const categoriasSeleccionadas = Array.from(checkboxes)
+        .filter((checkbox) => checkbox.checked)
+        .map((checkbox) => checkbox.id);
+
+    const eventosFiltrados = filtrarPorCategoria(Events.events, categoriasSeleccionadas);
+
+    contenedorTarjetas.innerHTML = crearTarjetas({ events: eventosFiltrados });
+}
+
+function buscarEvento() {
+    const inputBuscador = document.getElementById('buscador');
+    const busqueda = inputBuscador.value.toLowerCase();
+    const tarjetas = document.getElementsByClassName('col');
+    let resultadosEncontrados = 0;
+    for (const tarjeta of tarjetas) {
+        const titulo = tarjeta.querySelector('.card-title').textContent.toLowerCase();
+        const descripcion = tarjeta.querySelector('.card-text').textContent.toLowerCase();
+        const categoria = tarjeta.querySelector('.card-category').textContent.toLowerCase();
+        if (titulo.includes(busqueda) || descripcion.includes(busqueda) || categoria.includes(busqueda)) {
+            tarjeta.style.display = 'block';
+            resultadosEncontrados++;
+        } else {
+            tarjeta.style.display = 'none';
+        }
+    }
+
+    if (resultadosEncontrados === 0) {
+        const contenedorTarjetas = document.getElementById('contenedor');
+        const mensajeError = document.createElement('p');
+        mensajeError.innerText = 'No se encontraron resultados para tu búsqueda';
+        contenedorTarjetas.appendChild(mensajeError);
+    }
+}
+
+checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener('change', actualizarTarjetas);
+});
+
+btnBuscar.addEventListener('click', buscarEvento);
+

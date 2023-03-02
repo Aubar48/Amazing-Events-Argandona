@@ -69,6 +69,6 @@ td {
     letter-spacing: 2px;
 }
 #contenedor img{
-    height:200px!important;
-    width: auto;
+    object-fit: cover;
+    height: 300px;
 }

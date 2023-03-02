@@ -44,31 +44,39 @@
             <div class="search-area d-inline-flex justify-content-around mt-3 align-items-center pb-4 border-bottom">
                 <div class="d-sm-inline-flex d-md-inline-flex d-lg-inline-flex">
                     <div>
-                        <input class="form-check-input" type="checkbox" name="category1" id="category1">
-                        <label for="category1">Category1</label>
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Food">
+                        <label for="Food">Food</label>
                     </div>
                     <div>
-                        <input class="form-check-input" type="checkbox" name="category2" id="category2">
-                        <label for="category2">Category2</label>
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Museum">
+                        <label for="Museum">Museum</label>
                     </div>
                     <div>
-                        <input class="form-check-input" type="checkbox" name="category3" id="category3">
-                        <label for="category3">Category3</label>
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Concert">
+                        <label for="Concert">Concert</label>
                     </div>
                     <div>
-                        <input class="form-check-input" type="checkbox" name="category4" id="category4">
-                        <label for="category4">Category4</label>
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Race">
+                        <label for="cateogry4">Race</label>
                     </div>
                     <div>
-                        <input class="form-check-input" type="checkbox" name="category5" id="category5">
-                        <label for="category5">Category5</label>
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Books">
+                        <label for="Books">Books</label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Cinema">
+                        <label for="Cinema">Cinema</label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Party">
+                        <label for="Party">Party</label>
                     </div>
 
                 </div>
                 <div class="d-inline-flex col-4">
-                    <input type="text" class="form-control border border-secondary">
+                    <input type="text" class="form-control border border-secondary" id="buscador" placeholder="Search..." oninput="buscarEvento()">
                     <button class="ms-2 btn btn-pink text-white" type="button" name="buscar"><i
-                            class="bi bi-search"></i></button>
+                            class="bi bi-search" id="btnBuscar" onclick="buscarEvento()"></i></button>
                 </div>
             </div>
 
