@@ -449,7 +449,6 @@ let Events =
     ]
 }
 
-const currentDate = Events.currentDate;
 const contenedorTarjetas = document.getElementById('contenedor');
 const checkboxes = document.querySelectorAll('input[name="categoria"]');
 
@@ -457,7 +456,7 @@ function crearTarjetas(arrayData) {
     let tarjetas = '';
     for (const event of arrayData.events) {
         tarjetas += `
-            <div class="col">
+            <div class="col" id="event-${event._id}">
                 <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
                     <img src="${event.image}" class="card-img-top" alt="card">
                     <div class="card-body">
@@ -469,7 +468,7 @@ function crearTarjetas(arrayData) {
                         <div class="d-flex align-items-center">
                             <h5>Price: ${event.price}$</h5>
                         </div>
-                        <a class="btn btn-pink text-white" href="./html/details.html">More Info</a>
+                        <a class="btn btn-pink text-white" href="./html/details.html?id=${event._id}">More Info</a>
                     </div>
                 </div>
             </div>
@@ -524,10 +523,11 @@ function buscarEvento() {
         contenedorTarjetas.appendChild(mensajeError);
     }
 }
-  
+
 
 checkboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', actualizarTarjetas);
 });
 
 btnBuscar.addEventListener('click', buscarEvento);
+

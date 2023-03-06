@@ -18,7 +18,7 @@ BUTTON NAV  + ANIMATION*/
     letter-spacing: 2px;
     border: transparent;
     text-decoration: none;
-  }
+}
 
 .active {
     background-color: #df1573 !important;
@@ -29,7 +29,7 @@ BUTTON NAV  + ANIMATION*/
     transition: .3s;
 }
 
-.nav:hover > :not(:hover) {
+.nav:hover> :not(:hover) {
     opacity: .4;
 }
 
@@ -43,12 +43,13 @@ BUTTON CARD*/
 /* 
 CARD ANIMATION */
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
 
 .card {
     background-color: rgba(248, 245, 245, 0.5) !important;
 }
+
 /* TABLE */
 .table {
     border-collapse: separate;
@@ -68,7 +69,8 @@ td {
     padding: 5px;
     letter-spacing: 2px;
 }
-#contenedor img{
+
+#contenedor img {
     object-fit: cover;
     height: 300px;
 }
