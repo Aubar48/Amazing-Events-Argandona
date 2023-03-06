@@ -456,7 +456,7 @@ const eventFound = data.events.find(event => event._id == id)
 const div = document.querySelector("#contenedor")
 div.innerHTML = ` 
 <div class="col" id="event-${eventFound._id}">
-<div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
+<div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
 <img src="${eventFound.image}" class="card-img-top" alt="card">
 <div class="card-body">
   <h4 class="card-title">${eventFound.name}</h4>
