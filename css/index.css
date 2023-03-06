@@ -38,6 +38,14 @@ BUTTON CARD*/
 .btn-pink {
     background-color: #df1573 !important;
     font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
+.btn-pink2 {
+    background-color: #df1573 !important;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-radius: 4px;
 }
 
 
@@ -77,7 +85,7 @@ th{
     font-size: 20px;
     padding: 5px;
     letter-spacing: 2px;
-    border-radius: 3px; 
+    border-radius: 4px; 
 }
 
 #contenedor img {
@@ -92,13 +100,11 @@ form{
 
 .form-check-input{
     border: solid #df1573 2px;
-    border-radius: 3px;
+    border-radius: 4px;
     margin-top: 5px;
     margin-left: 10px;
-   
-
 }
+
 .form-check-label{
-    font-size: 19px;
-    
+    font-size: 19px; 
 }
