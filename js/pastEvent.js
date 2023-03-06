@@ -460,9 +460,10 @@ function crearTarjetas(arrayData) {
         <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
             <img src=" ${event.image} " class="card-img-top" alt="card">
             <div class="card-body">
-                <h5 class="card-title"> ${event.name} </h5>
+                <h4 class="card-title"> ${event.name} </h4>
                 <p class="card-text"> ${event.description} </p>
                 <h6>Category: ${event.category} <h6>
+                <h5 class="card-stock">In stock</h5>
             </div>
             <div class="card-footer d-inline-flex justify-content-around">
                 <div class="d-flex align-items-center">

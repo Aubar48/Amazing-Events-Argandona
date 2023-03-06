@@ -37,6 +37,7 @@ BUTTON NAV  + ANIMATION*/
 BUTTON CARD*/
 .btn-pink {
     background-color: #df1573 !important;
+    font-size: 18px;
 }
 
 
@@ -83,9 +84,21 @@ th{
     object-fit: cover;
     height: 300px;
 }
-form{
-      
+form{   
     font-size: 20px;
     padding: 5px;
     letter-spacing: 2px;
+}
+
+.form-check-input{
+    border: solid #df1573 2px;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: 10px;
+   
+
+}
+.form-check-label{
+    font-size: 19px;
+    
 }

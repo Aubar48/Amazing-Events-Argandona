@@ -472,7 +472,7 @@ div.innerHTML = `
                         <div class="d-flex align-items-center">
                         <h5>Price: ${eventFound.price}$</h5>
                         </div>
-                        <a class="btn btn-pink text-white" href="#">Build</a>
+                        <a class="btn btn-pink text-white" href="#">To buy</a>
             </div>
         </div>
     </div>
