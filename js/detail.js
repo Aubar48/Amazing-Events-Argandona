@@ -466,6 +466,7 @@ div.innerHTML = `
   <h6 class ="card-category">Date: ${eventFound.date}</h46>
   <h6 class ="card-category">Place: ${eventFound.place}</h6>
   <h6 class ="card-category">Assistance: ${eventFound.assistance}</h6>
+  <h6 class ="card-category">Estimate: ${eventFound.estimate}</h6>
   </div>
 
   <div class="card-footer d-inline-flex justify-content-around">
@@ -477,3 +478,4 @@ div.innerHTML = `
         </div>
     </div>
 `;
+
