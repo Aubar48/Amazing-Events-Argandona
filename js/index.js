@@ -469,7 +469,7 @@ function crearTarjetas(arrayData) {
                         <div class="d-flex align-items-center">
                             <h5>Price: ${event.price}$</h5>
                         </div>
-                        <a class="btn btn-pink text-dark" href="./html/details.html?id=${event._id}">More Info</a>
+                        <a class="btn btn-pink2 text-dark" href="./html/details.html?id=${event._id}">More Info</a>
                     </div>
                 </div>
             </div>
@@ -531,4 +531,18 @@ checkboxes.forEach((checkbox) => {
 });
 
 btnBuscar.addEventListener('click', buscarEvento);
+
+const botonModo = document.getElementById("modo");
+botonModo.addEventListener("click", cambiarModo);
+
+function cambiarModo() {
+  const body = document.querySelector("body");
+  if (body.classList.contains("dia")) {
+    body.classList.remove("dia");
+    body.classList.add("noche");
+  } else {
+    body.classList.remove("noche");
+    body.classList.add("dia");
+  }
+}
 

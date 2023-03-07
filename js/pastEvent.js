@@ -456,30 +456,30 @@ function crearTarjetas(arrayData) {
     for (const event of arrayData.events) {
         if (event.date < currentDate) {
             tarjetas += `
-        <div class="col" id="event-${event._id}">
-        <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-            <img src=" ${event.image} " class="card-img-top" alt="card">
-            <div class="card-body">
-                <h4 class="card-title"> ${event.name} </h4>
-                <p class="card-text"> ${event.description} </p>
-                <h6>Category: ${event.category} <h6>
-                <h5 class="card-stock">In stock</h5>
-            </div>
-            <div class="card-footer d-inline-flex justify-content-around">
-                <div class="d-flex align-items-center">
-                    <h5>Price: ${event.price} $ </h5>            
+            <div class="col" id="event-${event._id}">
+                <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <img src="${event.image}" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h4 class="card-title">${event.name}</h4>
+                        <p class="card-text">${event.description}</p>
+                        <h6 class ="card-category">Category: ${event.category}<h6>
+                        <h5 class="card-stock">In stock</h5>
+                    </div>
+                    <div class="card-footer d-inline-flex justify-content-around">
+                        <div class="d-flex align-items-center">
+                            <h5>Price: ${event.price}$</h5>
+                        </div>
+                        <a class="btn btn-pink2 text-dark" href="./html/details.html?id=${event._id}">More Info</a>
+                    </div>
                 </div>
-                <a class="btn btn-pink text-white" href="../html/details.html?id=${event._id}" >More Info</a>
             </div>
-        </div>
-    </div>`
+        `
         }
 
     }
 
     return tarjetas
 }
-console.log(crearTarjetas(Events))
 contenedorTarjetas.innerHTML = crearTarjetas(Events)
 
 
@@ -527,9 +527,23 @@ function buscarEvento() {
     }
 }
 
+
 checkboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', actualizarTarjetas);
 });
 
 btnBuscar.addEventListener('click', buscarEvento);
 
+const botonModo = document.getElementById("modo");
+botonModo.addEventListener("click", cambiarModo);
+
+function cambiarModo() {
+  const body = document.querySelector("body");
+  if (body.classList.contains("dia")) {
+    body.classList.remove("dia");
+    body.classList.add("noche");
+  } else {
+    body.classList.remove("noche");
+    body.classList.add("dia");
+  }
+}
