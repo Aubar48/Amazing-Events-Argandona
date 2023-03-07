@@ -519,12 +519,17 @@ function buscarEvento() {
 
     if (resultadosEncontrados === 0) {
         const contenedorTarjetas = document.getElementById('contenedor');
-        const mensajeError = document.createElement('p');
-        mensajeError.innerText = 'No se encontraron resultados para tu búsqueda';
-        contenedorTarjetas.appendChild(mensajeError);
+        contenedorTarjetas.innerHTML = 
+        `
+        <div class="home w-100">
+        <p class="mt-4 fs-1 fw-bold">Not Found</p>
+        <img class="inline-block" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDNiOWEyOTNkMTdhNjNiN2Q2MGRmYjhlOWMxNzM5YTc4NzQ5MGZiOSZjdD1n/a93jwI0wkWTQs/giphy.gif">
+        
+        </div>
+        
+        `;
     }
 }
-
 
 checkboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', actualizarTarjetas);
