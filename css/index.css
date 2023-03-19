@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -48,6 +48,7 @@ BUTTON CARD*/
     letter-spacing: 2px;
     border-radius: 4px;
 }
+
 .btn-pink2 {
     background-color: #df1573 !important;
     font-size: 1.2rem;
@@ -95,7 +96,8 @@ td {
     /* letter-spacing: 2px; */
     font-size: 1.1rem;
 }
-th{
+
+th {
     background-color: #ff9d00;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
@@ -103,87 +105,93 @@ th{
     font-size: 1.1rem;
     padding: 5px;
     /* letter-spacing: 2px; */
-    border-radius: 4px; 
+    border-radius: 4px;
     vertical-align: baseline;
 }
 
 /*formulario*/
-form{   
+form {
     font-size: 20px;
     padding: 5px;
     letter-spacing: 2px;
 }
 
-.form-check-input{
+.form-check-input {
     border: solid #df1573 2px;
     border-radius: 4px;
     margin-top: 5px;
     margin-left: 10px;
 }
 
-.form-check-label{
-    font-size: 1.2rem; 
+.form-check-label {
+    font-size: 1.2rem;
 }
+
 /* hover Home-Upcoming-Pastcoming-Contact-Stat*/
-.home{
+.home {
     text-shadow: #df1573 1px 0 10px;
     font-family: 'Tourney', cursive;
     font-size: 3em;
-    
+
 }
-#modo{
+
+#modo {
     background: none;
     border: none;
     text-decoration: none;
     font-size: 3rem;
     transition: 1s;
 }
+
 #modo:hover {
     transform: rotate(1turn);
 }
 
-
+.homeRom {
+    color: #df1573 !important;
+    ;
+}
 
 body.dia .card {
     background-color: rgba(248, 245, 245, 0.5) !important;
     color: #272727;
-  }
-  
-  body.noche .card {
+}
+
+body.noche .card {
     background-color: rgba(32, 31, 31, 0.5) !important;
     color: #fcfafa;
-  }
+}
 
-  body.noche .form-check-label {
+body.noche .form-check-label {
     color: #272727;
-  }
+}
 
-  
-  body.dia {
+
+body.dia {
     background-color: rgba(248, 245, 245, 0.5) !important;
     color: #272727;
-  }
-  
-  body.noche {
+}
+
+body.noche {
     background-color: rgba(32, 31, 31, 0.5) !important;
     color: #fcfafa;
-  }
+}
 
-  
 
-  body.noche .active {
-    color: #272727!important;
-  }
-  
-  body.noche .nav-link {
+
+body.noche .active {
+    color: #272727 !important;
+}
+
+body.noche .nav-link {
     background-color: rgba(32, 31, 31, 0.5) !important;
-    color: #fcfafa!important;
-  }
+    color: #fcfafa !important;
+}
 
-  body.noche .btn-pink2{
-    color: #fcfafa!important;
-  }
+body.noche .btn-pink2 {
+    color: #fcfafa !important;
+}
 
-  .main2{
+.main2 {
     min-height: 86vh;
-  }
+}

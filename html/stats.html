@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="icon" type="image/png" href="../img/favicon-AmazingEvents.ico">
     <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,700;1,100;1,200;1,400&display=swap"
-      rel="stylesheet">
+        rel="stylesheet">
 </head>
 
 <body>
@@ -37,10 +37,10 @@
 
         <main class="main2 d-flex flex-column pb-2">
             <section class="d-flex bg-dark-subtle justify-content-between align-items-center px-3">
-                <i class="home bi bi-caret-left fs-1"></i>
+                <a class="homeRom bi bi-caret-left fs-1" href="./contact.html"></a>
                 <h1 class="home home d-inline-flex align-items-center">Stats</h1>
                 <button id="modo">🌓</button>
-                <i class="home bi bi-caret-right fs-1"></i>
+                <a class="homeRom bi bi-caret-right fs-1" href="../index.html"></a>
             </section>
 
 
@@ -56,78 +56,42 @@
                             <th class="stacked">Event with larger capacity</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="seccion1Table">
                         <tr>
                             <td> - </td>
                             <td> - </td>
                             <td> - </td>
                         </tr>
+                    </tbody>
+                    <thead>
                         <tr>
                             <th colspan="3">Upcoming events statistics by category</th>
-                        </tr>
-                        <tr>
-                            <th class="stacked" >Categories</th>
-                            <th class="stacked">Revenues</th>
-                            <th class="stacked">Porcentage of attendance</th>
-                        </tr>
-                        <tr>
-
-                            <td> - </td>
-                            <td> - </td>
-                            <td> - </td>
-                        </tr>
-                        <tr>
-
-                            <td> - </td>
-                            <td> - </td>
-                            <td> - </td>
-                        </tr>
-                        <tr>
-
-                            <td> - </td>
-                            <td> - </td>
-                            <td> - </td>
-                        </tr>
-                        <tr>
-                            <th colspan="3">Past Events statistic by category</th>
                         </tr>
                         <tr>
                             <th class="stacked">Categories</th>
                             <th class="stacked">Revenues</th>
                             <th class="stacked">Porcentage of attendance</th>
                         </tr>
+                    </thead>
+                    <tbody id="seccion2Table">
                         <tr>
 
                             <td> - </td>
                             <td> - </td>
                             <td> - </td>
                         </tr>
-                        <tr>
-
-                            <td> - </td>
-                            <td> - </td>
-                            <td> - </td>
+                    </tbody>
+                    <thead>
+                        <th colspan="3">Past Events statistic by category</th>
                         </tr>
                         <tr>
-
-                            <td> - </td>
-                            <td> - </td>
-                            <td> - </td>
+                            <th class="stacked">Categories</th>
+                            <th class="stacked">Revenues</th>
+                            <th class="stacked">Porcentage of attendance</th>
                         </tr>
+                    </thead>
+                    <tbody id="seccion3Table">
                         <tr>
-
-                            <td> - </td>
-                            <td> - </td>
-                            <td> - </td>
-                        </tr>
-                        <tr>
-
-                            <td> - </td>
-                            <td> - </td>
-                            <td> - </td>
-                        </tr>
-                        <tr>
-
                             <td> - </td>
                             <td> - </td>
                             <td> - </td>
@@ -151,6 +115,7 @@
     <div class="d-flex justify-content-center">
         <audio src="../audio/Mary_On_A_Cross_Ghost _Live.mp3" autoplay loop>
     </div>
+    <script src="../js/stats.js"></script>
 </body>
 
 </html>
