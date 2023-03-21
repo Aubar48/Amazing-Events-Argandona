@@ -195,3 +195,7 @@ body.noche .btn-pink2 {
 .main2 {
     min-height: 86vh;
 }
+
+body.noche th {
+    color: #fcfafa !important;
+}

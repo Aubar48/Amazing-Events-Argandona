@@ -101,26 +101,22 @@ async function fetchEvents() {
             }
         }
 
-
-
-        btnBuscar.addEventListener('click', buscarEvento);
-
         const botonModo = document.getElementById("modo");
         botonModo.addEventListener("click", cambiarModo);
 
         function cambiarModo() {
             const body = document.querySelector("body");
-            if (body.classList.contains("dia")) {
-                body.classList.remove("dia");
-                body.classList.add("noche");
+
+            body.classList.toggle("dia");
+            body.classList.toggle("noche");
+            if (localStorage.getItem('modo') === 'dia') {
+                localStorage.setItem('modo', 'noche');
             } else {
-                body.classList.remove("noche");
-                body.classList.add("dia");
+                localStorage.setItem('modo', 'dia');
+
             }
+
         }
-
-
-
         //final del try catch, de la funcion fetchEvents
     }
     catch (error) {

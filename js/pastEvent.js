@@ -8,11 +8,11 @@ async function fetchEvents() {
         const ev = data.events;
         const currentDate = data.currentDate
         const events = ev.filter(e => e.date < currentDate)
-        
+
         function crearTarjetas(arrayData) {
             let tarjetas = ''
             for (const event of arrayData) {
-                
+
                 tarjetas += `
             <div class="col" id="event-${event._id}">
                 <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
@@ -35,7 +35,7 @@ async function fetchEvents() {
         `
             }
 
-         
+
 
             return tarjetas
         }
@@ -105,22 +105,23 @@ async function fetchEvents() {
             checkbox.addEventListener('change', actualizarTarjetas);
         });
 
-        btnBuscar.addEventListener('click', buscarEvento);
-
         const botonModo = document.getElementById("modo");
         botonModo.addEventListener("click", cambiarModo);
 
         function cambiarModo() {
             const body = document.querySelector("body");
-            if (body.classList.contains("dia")) {
-                body.classList.remove("dia");
-                body.classList.add("noche");
+
+            body.classList.toggle("dia");
+            body.classList.toggle("noche");
+            if (localStorage.getItem('modo') === 'dia') {
+                localStorage.setItem('modo', 'noche');
             } else {
-                body.classList.remove("noche");
-                body.classList.add("dia");
+                localStorage.setItem('modo', 'dia');
+
             }
+
         }
-        
+
     }
     catch (error) {
         console.error('Error fetching data:', error);

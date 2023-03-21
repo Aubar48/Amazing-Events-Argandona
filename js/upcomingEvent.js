@@ -8,12 +8,12 @@ async function fetchEvents() {
         const ev = data.events;
         const currentDate = data.currentDate
         const events = ev.filter(e => e.date >= currentDate)
-       
+
         function crearTarjetas(arrayData) {
             let tarjetas = ''
             for (const event of arrayData) {
-               
-               
+
+
                 tarjetas += `
             <div class="col" id="event-${event._id}">
                 <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
@@ -114,25 +114,29 @@ async function fetchEvents() {
             }
         }
 
-
-
-
-        btnBuscar.addEventListener('click', buscarEvento);
-
         const botonModo = document.getElementById("modo");
         botonModo.addEventListener("click", cambiarModo);
+
+        // Obtener el estado del modo del almacenamiento local
+        if (localStorage.getItem('modo') === 'noche') {
+            document.querySelector('body').classList.add('noche');
+        }
 
         function cambiarModo() {
             const body = document.querySelector("body");
             if (body.classList.contains("dia")) {
                 body.classList.remove("dia");
                 body.classList.add("noche");
+                // Guardar el estado del modo en el almacenamiento local
+                localStorage.setItem('modo', 'noche');
             } else {
                 body.classList.remove("noche");
                 body.classList.add("dia");
+                // Guardar el estado del modo en el almacenamiento local
+                localStorage.setItem('modo', 'dia');
             }
         }
-        
+
     }
     catch (error) {
         console.error('Error fetching data:', error);
