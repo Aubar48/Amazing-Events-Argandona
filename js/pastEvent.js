@@ -104,6 +104,7 @@ async function fetchEvents() {
         checkboxes.forEach((checkbox) => {
             checkbox.addEventListener('change', actualizarTarjetas);
         });
+        btnBuscar.addEventListener('click', buscarEvento);
 
         const botonModo = document.getElementById("modo");
         botonModo.addEventListener("click", cambiarModo);

@@ -113,6 +113,7 @@ async function fetchEvents() {
         `;
             }
         }
+        btnBuscar.addEventListener('click', buscarEvento);
 
         const botonModo = document.getElementById("modo");
         botonModo.addEventListener("click", cambiarModo);
