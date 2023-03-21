@@ -115,32 +115,31 @@ async function fetchEvents() {
         }
         btnBuscar.addEventListener('click', buscarEvento);
 
-        const botonModo = document.getElementById("modo");
-        botonModo.addEventListener("click", cambiarModo);
-
-        // Obtener el estado del modo del almacenamiento local
-        if (localStorage.getItem('modo') === 'noche') {
-            document.querySelector('body').classList.add('noche');
-        }
-
-        function cambiarModo() {
-            const body = document.querySelector("body");
-            if (body.classList.contains("dia")) {
-                body.classList.remove("dia");
-                body.classList.add("noche");
-                // Guardar el estado del modo en el almacenamiento local
-                localStorage.setItem('modo', 'noche');
-            } else {
-                body.classList.remove("noche");
-                body.classList.add("dia");
-                // Guardar el estado del modo en el almacenamiento local
-                localStorage.setItem('modo', 'dia');
-            }
-        }
-
     }
     catch (error) {
         console.error('Error fetching data:', error);
     }
 };
 fetchEvents();
+
+const botonModo = document.getElementById("modo");
+botonModo.addEventListener("click", cambiarModo);
+
+// Obtener el estado del modo del almacenamiento local
+if (localStorage.getItem('modo') === 'noche') {
+    document.querySelector('body').classList.add('noche');
+}
+
+function cambiarModo() {
+    const body = document.querySelector("body");
+
+    body.classList.toggle("dia");
+    body.classList.toggle("noche");
+    if (localStorage.getItem('modo') === 'dia') {
+        localStorage.setItem('modo', 'noche');
+    } else {
+        localStorage.setItem('modo', 'dia');
+
+    }
+
+}

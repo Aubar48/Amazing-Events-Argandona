@@ -66,9 +66,9 @@ async function fetchEvents() {
             }
         }
 
-        checkboxes.forEach((checkbox) => {
-            checkbox.addEventListener('change', actualizarTarjetas);
-        });
+        // checkboxes.forEach((checkbox) => {
+        //     checkbox.addEventListener('change', actualizarTarjetas);
+        // });
 
         function buscarEvento() {
             const inputBuscador = document.getElementById('buscador');
@@ -88,6 +88,7 @@ async function fetchEvents() {
             }
 
             if (resultadosEncontrados === 0) {
+
                 const contenedorTarjetas = document.getElementById('contenedor');
                 contenedorTarjetas.innerHTML =
                     `
@@ -100,24 +101,14 @@ async function fetchEvents() {
         `;
             }
         }
+
+        checkboxes.forEach((checkbox) => {
+            checkbox.addEventListener('change', actualizarTarjetas);
+        });
+
         btnBuscar.addEventListener('click', buscarEvento);
 
-        const botonModo = document.getElementById("modo");
-        botonModo.addEventListener("click", cambiarModo);
 
-        function cambiarModo() {
-            const body = document.querySelector("body");
-
-            body.classList.toggle("dia");
-            body.classList.toggle("noche");
-            if (localStorage.getItem('modo') === 'dia') {
-                localStorage.setItem('modo', 'noche');
-            } else {
-                localStorage.setItem('modo', 'dia');
-
-            }
-
-        }
         //final del try catch, de la funcion fetchEvents
     }
     catch (error) {
@@ -125,3 +116,27 @@ async function fetchEvents() {
     }
 };
 fetchEvents();
+
+
+
+const botonModo = document.getElementById("modo");
+botonModo.addEventListener("click", cambiarModo);
+
+// Obtener el estado del modo del almacenamiento local
+if (localStorage.getItem('modo') === 'noche') {
+    document.querySelector('body').classList.add('noche');
+}
+
+function cambiarModo() {
+    const body = document.querySelector("body");
+
+    body.classList.toggle("dia");
+    body.classList.toggle("noche");
+    if (localStorage.getItem('modo') === 'dia') {
+        localStorage.setItem('modo', 'noche');
+    } else {
+        localStorage.setItem('modo', 'dia');
+
+    }
+
+}
