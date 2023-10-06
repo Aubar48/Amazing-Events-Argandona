@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Amazing Events</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" type="image/png" href="./img/favicon-AmazingEvents.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,700;1,100;1,200;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+</head>
+
+<body>
+
+    <div class="container-fluid px-0 d-flex flex-column">
+        <header class="d-flex px-5 pt-4">
+            <div class="d-flex w-100 pb-2">
+
+                <img class="me-auto" src="./img/Logo_Amazing_Events.png" alt="logo" height="40">
+
+                <nav class="nav nav-pills">
+                    <a class="nav-link active text-dark" href="./index.html">Home</a>
+                    <a class="nav-link text-dark" href="./html/upcomingEvents.html">Upcoming Events</a>
+                    <a class="nav-link text-dark" href="./html/pastEvents.html">Past Events</a>
+                    <a class="nav-link text-dark" href="./html/contact.html">Contact</a>
+                    <a class="nav-link text-dark" href="./html/stats.html">Stats</a>
+                </nav>
+            </div>
+        </header>
+
+
+        <main class="main2 d-flex flex-column pb-2">
+            <section class="d-flex bg-dark-subtle justify-content-between align-items-center px-3">
+                <a class=" homeRom bi bi-caret-left fs-1" href="./html/stats.html"></a>
+                <h1 class=" home d-inline-flex align-items-center bi bi-android2">Home</h1>
+                <button id="modo">🌓</button>
+                <a class=" homeRom bi bi-caret-right fs-1" href="./html/upcomingEvents.html"></a>
+            </section>
+            <div class="search-area d-inline-flex justify-content-around mt-3 align-items-center pb-4 border-bottom ">
+                <div class="checkbox d-xs-inline-flex d-sm-inline-flex d-md-inline-flex d-lg-inline-flex ">
+                    <div>
+
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Food">
+                        <label class="form-check-label" for="Food">Food</label>
+                    </div>
+                    <div>
+
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Museum">
+                        <label class="form-check-label" for="Museum">Museum</label>
+                    </div>
+                    <div>
+
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Concert">
+                        <label class="form-check-label" for="Concert">Concert</label>
+                    </div>
+                    <div>
+
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Race">
+                        <label class="form-check-label" for="Race">Race</label>
+                    </div>
+                    <div>
+
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Books">
+                        <label class="form-check-label" for="Books">Books</label>
+                    </div>
+                    <div>
+
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Cinema">
+                        <label class="form-check-label" for="Cinema">Cinema</label>
+                    </div>
+                    <div>
+
+                        <input class="form-check-input" type="checkbox" name="categoria" id="Party">
+                        <label class="form-check-label " for="Party">Party</label>
+                    </div>
+
+                </div>
+                <div class="d-inline-flex col-4">
+                    <input type="text" class="form-control border border-secondary" id="buscador"
+                        placeholder="Search..." oninput="buscarEvento()">
+                    <button class="ms-2 btn btn-pink text-white" type="button" name="buscar"><i class="bi bi-search"
+                            id="btnBuscar" onclick="buscarEvento()"></i></button>
+                </div>
+            </div>
+
+            <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2  row-cols-xs-1 g-4 m-4 text-center"
+                id="contenedor">
+
+            </div>
+        </main>
+
+        <footer class="d-flex bg-dark text-white align-items-center justify-content-between">
+            <div class="d-inline-flex justify-content-around">
+                <i class="bi bi-instagram btn btn-danger fs-4 px-2 py-0 ms-2"></i>
+
+                <i class="bi bi-facebook btn btn-primary fs-4 px-2 py-0 ms-2"></i>
+
+                <i class="bi bi-whatsapp btn btn-success fs-4 px-2 py-0 ms-2"></i>
+            </div>
+
+            <a href="https://aubar48.github.io/miPortafolioNahuel/">
+                © Derechos reservados. Nahuel Argandoña
+            </a>
+
+            <div class="me-2 fs-3">
+                <span>FE01-TM</span>
+            </div>
+        </footer>
+        <audio src="./audio/musica.mp3" autoplay loop></audio>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
